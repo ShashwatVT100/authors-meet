@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from '../context/AuthContext';
-import PrivateRoute from '../components/PrivateRoute';
-import Dashboard from '../pages/Dashboard';
-import Login from '../pages/Login';
+import { AuthProvider } from '../auth-system/AuthContext';
+import PrivateRoute from '../auth-system/PrivateRoute';
+import Dashboard from '../auth-system/Dashboard';
+import Login from '../auth-system/Login';
 
 // Helper to render with providers
 const renderWithProviders = (ui) => {
